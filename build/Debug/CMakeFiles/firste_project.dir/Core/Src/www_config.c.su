@@ -1,0 +1,5 @@
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_config.c:7:6:Config_Default	8	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_config.c:20:6:Config_Load	24	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_config.c:26:19:Config_Save	40	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_config.c:68:6:Param_Get	16	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_config.c:80:5:Param_Set	32	static

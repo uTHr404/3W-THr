@@ -1,0 +1,8 @@
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_sd.c:9:13:SD_Name	48	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_sd.c:16:6:SD_Unmount	8	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_sd.c:30:12:SD_LogOnce	672	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_sd.c:76:5:SD_Log	24	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_sd.c:100:13:SD_RawProbe	32	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_sd.c:129:16:SD_MisoRead	40	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_sd.c:138:13:SD_MisoPinTest	40	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_sd.c:159:6:SD_SpiSelfTest	24	static

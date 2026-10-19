@@ -1,0 +1,7 @@
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_measure.c:9:16:GPS_Get	32	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_measure.c:23:16:Acquire	48	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_measure.c:82:13:fmt_udeg	48	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_measure.c:91:12:Build_Line	120	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_measure.c:117:13:Err_Update	16	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_measure.c:129:6:Log_Cycle	176	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_measure.c:156:6:Maintenance_Measure	168	static

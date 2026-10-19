@@ -1,0 +1,4 @@
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_util.c:7:6:USART2_Init_Manual	40	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_util.c:37:6:uart_print	16	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_util.c:42:6:uart_printf	192	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_util.c:52:6:delay_us	24	static

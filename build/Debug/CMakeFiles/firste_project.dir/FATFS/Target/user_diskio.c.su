@@ -1,0 +1,13 @@
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:83:16:spi_rw	32	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:90:13:sd_set_speed	16	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:96:12:sd_wait_ready	24	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:106:13:sd_deselect	8	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:112:12:sd_select	8	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:121:16:sd_send_cmd	24	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:155:12:sd_rcvr_block	32	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:170:12:sd_xmit_block	24	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:223:9:USER_initialize	40	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:295:9:USER_status	16	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:313:9:USER_read	24	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:356:9:USER_write	24	static
+C:/Users/ADMIN/Documents/firste_project/FATFS/Target/user_diskio.c:402:9:USER_ioctl	40	static

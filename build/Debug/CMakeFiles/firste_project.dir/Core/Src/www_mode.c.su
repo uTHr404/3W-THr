@@ -1,0 +1,6 @@
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_mode.c:14:6:Mode_Announce	8	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_mode.c:22:6:Mode_Set	16	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_mode.c:34:16:Btn_LongPress	24	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_mode.c:46:13:Buttons_Poll	16	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_mode.c:64:6:Background_Tasks	8	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_mode.c:72:6:Wait_ms	24	static

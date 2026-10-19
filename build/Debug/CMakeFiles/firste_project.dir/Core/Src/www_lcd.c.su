@@ -1,0 +1,10 @@
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_lcd.c:9:16:LCD_Detect	8	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_lcd.c:16:13:LCD_Write4	32	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_lcd.c:24:13:LCD_Send	16	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_lcd.c:30:13:LCD_Cmd	16	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_lcd.c:31:13:LCD_Data	16	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_lcd.c:33:13:LCD_Init	8	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_lcd.c:47:13:LCD_PrintLine	24	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_lcd.c:55:6:LCD_Begin	8	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_lcd.c:69:6:LCD_ShowMode	8	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_lcd.c:75:6:LCD_ShowMeas	104	static

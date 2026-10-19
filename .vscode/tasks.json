@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake: Build",
+      "type": "shell",
+      "command": "cmake --preset Debug; cmake --build build\\Debug",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "CMake: Flash",
+      "type": "shell",
+      "command": "& 'C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe' -c port=SWD -w build\\Debug\\firste_project.elf -v -rst",
+      "dependsOn": "CMake: Build",
+      "problemMatcher": []
+    }
+  ]
+}
+
+

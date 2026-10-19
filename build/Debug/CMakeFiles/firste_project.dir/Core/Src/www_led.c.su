@@ -1,0 +1,3 @@
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_led.c:15:6:HAL_IncTick	16	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_led.c:28:13:LED_Write	24	static
+C:/Users/ADMIN/Documents/firste_project/Core/Src/www_led.c:40:6:LED_Update	24	static
