@@ -4,8 +4,8 @@ Station météo embarquée sur carte STM32 NUCLEO-L476RG, réalisée dans le cad
 
 ## Équipe
 
-- Nom de l'équipe : **
-- Membres : *BOUZABAL TAHAR\MOUDJIB ABDELMOUAIN HOUAMEL\FERIEL ABERSI\ZIAD SMAILI*
+- Nom de l'équipe : *3W4M*
+- Membres : *TAHAR BOUZBAL ,MOUDJIB ABDELMOUAIN HOUAMEL,FERIEL ABERSI,ZIAD SMAILI *
 - Encadrante : maryam-cesi
 
 ## Présentation du projet
