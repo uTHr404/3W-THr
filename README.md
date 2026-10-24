@@ -4,8 +4,8 @@ Station météo embarquée sur carte STM32 NUCLEO-L476RG, réalisée dans le cad
 
 ## Équipe
 
-- Nom de l'équipe : *3W4M*
-- Membres : *TAHAR BOUZBAL ,MOUDJIB ABDELMOUAIN HOUAMEL,FERIEL ABERSI,ZIAD SMAILI *
+- Nom de l'équipe : 3W-uTHr
+- Membres (groupe 4) : BOUZABAL Tahar, HOUAMEL Moudjib Abdelmouain, ABERSI Feriel, SMAILI Ziyad
 - Encadrante : maryam-cesi
 
 ## Présentation du projet
@@ -15,9 +15,9 @@ Le Worldwide Weather Watcher est une station météo autonome. Elle mesure la te
 Le système fonctionne selon quatre modes :
 
 - **Standard** : démarrage normal (sans bouton pressé), mesures toutes les 10 minutes par défaut (paramètre LOG_INTERVAL) et enregistrement horodaté sur la carte SD.
-- **Configuration** : démarrage avec le bouton rouge pressé, réglage des paramètres via la console série ; l'acquisition est désactivée et le système repasse en mode standard après 30 minutes sans activité.
-- **Économique** : accessible depuis le mode standard par un appui de 5 secondes sur le bouton vert ; le GPS n'est lu qu'une fois sur deux et l'intervalle entre mesures est doublé pour économiser la batterie.
-- **Maintenance** : accessible depuis le mode standard ou économique par un appui de 5 secondes sur le bouton rouge ; les données sont consultables en direct sur le port série et la carte SD peut être retirée sans risque.
+- **Configuration** : démarrage avec le bouton USER bleu de la carte maintenu, réglage des paramètres via la console série ; l'acquisition est désactivée et le système repasse en mode standard après 30 minutes sans activité.
+- **Économique** : accessible depuis le mode standard par un appui de 5 secondes sur le bouton poussoir externe ; le GPS n'est lu qu'une fois sur deux et l'intervalle entre mesures est doublé pour économiser la batterie.
+- **Maintenance** : accessible depuis le mode standard ou économique par un appui de 5 secondes sur le bouton USER bleu ; les données sont consultables en direct sur le port série et la carte SD peut être retirée sans risque.
 
 La LED RGB indique le mode en cours : verte (standard), jaune (configuration), bleue (économique), orange (maintenance). Une LED qui clignote en rouge et une autre couleur signale une erreur (horloge RTC, GPS, capteur ou carte SD).
 
@@ -30,7 +30,7 @@ La LED RGB indique le mode en cours : verte (standard), jaune (configuration), b
 - Horloge temps réel (RTC)
 - Module carte micro SD (SPI)
 - LED RGB
-- Boutons poussoirs rouge et vert
+- Bouton USER bleu de la carte et bouton poussoir externe
 - Module GPS (désactivé dans la version actuelle)
 
 Le schéma de câblage se trouve dans le dépôt : `schema_cablage_WWW.xml` (à ouvrir avec draw.io) et `schema.branchement.org.drawio(2).png`.
@@ -41,7 +41,7 @@ Le schéma de câblage se trouve dans le dépôt : `schema_cablage_WWW.xml` (à 
 - `Drivers/` : pilotes STM32 (HAL, CMSIS)
 - `FATFS/` et `Middlewares/Third_Party/FatFs/` : gestion du système de fichiers de la carte SD
 - `cmake/`, `CMakeLists.txt`, `CMakePresets.json` : configuration de la compilation
-- `build.sh` : script de compilation et de flash
+- `build_flash.sh` : script de compilation et de flash
 - `firste_project.ioc` : configuration STM32CubeMX
 
 ## Compilation et flash
@@ -65,8 +65,8 @@ cd 3W-THr
 2. Lancer le script de compilation et de flash, avec la carte branchée en USB :
 
 ```bash
-chmod +x build.sh
-./build.sh
+chmod +x build_flash.sh
+./build_flash.sh
 ```
 
 Le script compile le projet avec CMake puis flashe la carte NUCLEO-L476RG.
@@ -77,14 +77,14 @@ Le dossier `build/` est généré à la compilation et n'est pas versionné (il 
 
 1. Brancher la carte en USB et insérer la carte micro SD.
 2. Ouvrir la console série (COM3 sous Windows, 115200 bauds) pour suivre les messages et accéder au mode Configuration.
-3. Changer de mode avec les boutons : démarrer avec le bouton rouge pressé pour la configuration, appuyer 5 secondes sur le vert pour l'économique, 5 secondes sur le rouge pour la maintenance ou pour revenir au mode précédent.
+3. Changer de mode avec les boutons : maintenir le bouton USER bleu pendant un RESET pour la configuration, appuyer 5 secondes sur le bouton externe pour l'économique, 5 secondes sur USER pour la maintenance ou pour revenir au mode précédent.
 4. Lire la couleur de la LED RGB pour connaître le mode ou l'erreur en cours.
 
 ## Documentation
 
-- Documentation technique : *lien à ajouter*
-- Fiche d'utilisation : *lien à ajouter*
+- [Livrable 4](https://github.com/uTHr404/3W-THr/blob/main/Livrable4.org.docx) : documentation technique, guide technicien et guide utilisateur
+- 
 
-## Auteur
+## Auteurs
 
-Projet réalisé par *à compléter* (uTHr404), CESI.
+Projet réalisé par le groupe 4 (BOUZABAL Tahar, HOUAMEL Moudjib Abdelmouain, ABERSI Feriel, SMAILI Ziyad), CESI.
