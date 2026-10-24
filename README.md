@@ -83,7 +83,7 @@ Le dossier `build/` est généré à la compilation et n'est pas versionné (il 
 ## Documentation
 
 - [Livrable 4](https://github.com/uTHr404/3W-THr/blob/main/Livrable4.org.docx) : documentation technique, guide technicien et guide utilisateur
-- 
+- schema de branchement https://github.com/uTHr404/3W-THr/blob/main/schema.branchement.org.drawio(2).png
 
 ## Auteurs
 
