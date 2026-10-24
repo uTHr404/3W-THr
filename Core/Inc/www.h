@@ -25,7 +25,7 @@
 #define FW_VERSION       "WWW-1.0"
 #define LOT_NUMBER       "LOT-0001"
 
-#define LOG_UNIT_MS      60000UL   /* 60000 : LOG_INTERVAL en minutes. Mettre 1000UL pour tester en secondes */
+#define LOG_UNIT_MS      1000UL   /* 15000 : LOG_INTERVAL en minutes. Mettre 1000UL pour tester en secondes */
 #define LONG_PRESS_MS    5000UL
 #define CONFIG_IDLE_MS   (30UL * 60UL * 1000UL)
 #define MAINT_PERIOD_MS  2000UL

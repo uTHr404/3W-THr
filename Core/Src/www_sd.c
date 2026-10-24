@@ -3,6 +3,7 @@
 
 /* ------------------------------ Carte SD ---------------------------- */
 #if USE_FATFS
+
 static FATFS fs;
 static uint8_t sd_mounted = 0;
 
@@ -35,18 +36,20 @@ static int SD_LogOnce(const char *line, uint16_t len)
   if (!sd_mounted)
   {
     FRESULT rm = FR_DISK_ERR;
+    uint8_t tries = 0;
     for (uint8_t i = 0; i < 6 && rm != FR_OK; i++)     /* 6 essais : tolere un contact incertain */
     {
       if (i) { USER_initialize(0); HAL_Delay(150 + 50 * i); }   /* delai croissant + reinit SPI a chaque essai */
       rm = f_mount(&fs, "0:/", 1);
+      tries = (uint8_t)(i + 1);
     }
     if (rm != FR_OK)
     {
-      uart_printf("[SD] f_mount failed: %d (CMD0=0x%02X stage=%d)\r\n", (int)rm, (unsigned)sd_dbg_cmd0, (int)sd_dbg_stage);
+      uart_printf("[SD] f_mount failed apres %u essais: %d (CMD0=0x%02X stage=%d)\r\n", (unsigned)tries, (int)rm, (unsigned)sd_dbg_cmd0, (int)sd_dbg_stage);
       SD_FAIL("f_mount", rm);
     }
     sd_mounted = 1;
-    uart_printf("[SD] f_mount OK\r\n");
+    uart_printf("[SD] f_mount OK (essai %u/6)\r\n", (unsigned)tries);
   }
 
   FATFS *pfs; DWORD fre;

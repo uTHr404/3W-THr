@@ -18,14 +18,6 @@
  /* USER CODE END Header */
 
 #ifdef USE_OBSOLETE_USER_CODE_SECTION_0
-/*
- * Warning: the user section 0 is no more in use (starting from CubeMx version 4.16.0)
- * To be suppressed in the future.
- * Kept to ensure backward compatibility with previous CubeMx versions when
- * migrating projects.
- * User code previously added there should be copied in the new user sections before
- * the section contents can be deleted.
- */
 /* USER CODE BEGIN 0 */
 /* USER CODE END 0 */
 #endif
@@ -46,7 +38,7 @@ extern SPI_HandleTypeDef hspi1;
 
 /* Vitesse SPI : SPI1 sur APB2 = 80 MHz */
 #define SD_SPEED_INIT  SPI_BAUDRATEPRESCALER_256   /* 312,5 kHz (< 400 kHz exige pour l'init) */
-#define SD_SPEED_RUN   SPI_BAUDRATEPRESCALER_128    /* 5 MHz (sur ; fils Dupont) */
+#define SD_SPEED_RUN   SPI_BAUDRATEPRESCALER_128   /* 625 kHz (80 MHz / 128) : lent et sur avec fils volants */
 
 /* Commandes SD (mode SPI) */
 #define CMD0    (0)           /* GO_IDLE_STATE */
@@ -169,7 +161,7 @@ static int sd_rcvr_block(uint8_t *buff, uint32_t len)
 #if _USE_WRITE == 1
 static int sd_xmit_block(const uint8_t *buff, uint8_t token)
 {
-  uint8_t resp;
+  uint8_t resp, n;
   uint32_t i;
 
   if (!sd_wait_ready(500)) return 0;
@@ -180,10 +172,19 @@ static int sd_xmit_block(const uint8_t *buff, uint8_t token)
     for (i = 0; i < 512; i++) spi_rw(buff[i]);
     spi_rw(0xFF);               /* CRC factice */
     spi_rw(0xFF);
-    resp = spi_rw(0xFF);
+
+    /* Reponse de la carte : certaines cartes mettent plusieurs octets a repondre (0xFF = pas encore) */
+    n = 10;
+    do { resp = spi_rw(0xFF); } while (resp == 0xFF && --n);
     if ((resp & 0x1F) != 0x05) return 0;   /* donnees refusees */
   }
-  return 1;
+  else
+  {
+    spi_rw(0xFF);               /* octet de garde apres le jeton de fin, avant le test d'occupation */
+  }
+
+  /* Attendre la fin de l'ecriture interne (MISO reste a 0 tant que la carte est occupee) */
+  return sd_wait_ready(500);
 }
 #endif
 
