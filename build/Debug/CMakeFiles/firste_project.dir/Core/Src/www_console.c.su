@@ -1,8 +1,0 @@
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_console.c:8:13:Cmd_Reply	16	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_console.c:10:12:Cmd_Clock	56	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_console.c:21:12:Cmd_Date	64	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_console.c:31:12:Cmd_Day	48	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_console.c:45:13:Params_Print	24	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_console.c:54:13:Help_Print	8	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_console.c:65:13:Command_Exec	32	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_console.c:92:6:Console_Feed	16	static

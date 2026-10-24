@@ -1,5 +1,0 @@
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_dht11.c:5:13:DHT_PinOutput	32	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_dht11.c:15:13:DHT_PinInput	32	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_dht11.c:24:12:wait_pin	16	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_dht11.c:34:12:DHT11_Bits	24	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_dht11.c:53:5:DHT11_Read	40	static

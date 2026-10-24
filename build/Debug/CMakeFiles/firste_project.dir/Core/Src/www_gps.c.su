@@ -1,4 +1,0 @@
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_gps.c:9:16:nmea_checksum_ok	24	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_gps.c:19:16:nmea_to_udeg	48	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_gps.c:43:13:GPS_ParseLine	64	static
-C:/Users/ADMIN/Documents/firste_project/Core/Src/www_gps.c:62:6:GPS_Feed	16	static
